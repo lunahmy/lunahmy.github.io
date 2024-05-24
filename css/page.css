@@ -1,9 +1,10 @@
 body {
     background-image: url('../graphics/concrete.jpg');
     background-size: cover;
+    overflow: hidden;
 }
 
-h1, h4 {
+h1, h4, p {
     font-family: "Luckiest Guy", cursive;
 }
 
@@ -32,16 +33,88 @@ mark {
 
 #line img {
     position: absolute;
-    width: 600px;
-    top: -25px;
-    left: -125px;
+    width: 640px;
+    top: -40px;
+    left: -140px;
+    filter: drop-shadow(0 0 0.75rem black);
+    transform: rotate(8deg);
+
 }
 
-#line2 img {
+/* #line2 img {
     position: absolute;
     width: 100px;
-    top: 40px;
+    top: 20px;
     left: 115px;
+    filter: drop-shadow(0 0 0.75rem black);
+
+} */
+
+#tongue img {
+    width: 200px;
+    position: absolute; 
+    top: 210px;
+    left:15px;
+    transform: rotate(-20deg);
+    filter: saturate(80%);
+
+}
+
+#crown img {
+    width: 300px;
+    position: absolute; 
+    top: 150px;
+    left: 500px;
+    transform: rotate(20deg);
+    filter: saturate(80%);
+
+}
+
+#smiley img {
+    width: 300px;
+    position: absolute; 
+    top: 320px;
+    left: 190px;
+    transform: rotate(25deg);
+    filter: saturate(80%);
+}
+
+#heart img {
+    width: 400px;
+    position: absolute; 
+    top: 2px;
+    left: 900px;
+    transform: rotate(-15deg);
+    filter: saturate(80%);
+
+}
+
+#bolt img {
+    width: 200px;
+    position: absolute; 
+    top: 300px;
+    left: 1200px;
+    transform: rotate(18deg);
+    filter: saturate(80%);
+
+}
+
+#sig img {
+    width: 200px;
+    position: absolute; 
+    top: 590px;
+    left: 620px;
+    /* transform: rotate(18deg); */
+}
+
+#sig2 img {
+    width: 200px;
+    position: absolute; 
+    top: 630px;
+    left: 620px;
+    /* transform: rotate(18deg); */
+    filter: saturate(80%);
+
 }
 
 #start {
@@ -51,24 +124,101 @@ mark {
     font-size:35px;
 }
 
-#fit {
+.fit {
     position: absolute;
-    left: 400px;
+    left: 375px;
     top: 175px;
     padding: 5px;
     border-radius: 25px;
 }
 
-#fit h3 {
+.fit h3 {
     position: absolute;
-    left:150px;
+    top: 175px;
+    left: 275px;
+    z-index: 3;
+}
+
+/* #block1 img{
+    width: 500px;
+    position: absolute;
+} */
+
+#block-tricks img{
+    width: 200px !important;
+    position: absolute; 
+    left: -25px !important;
+    top: 255px !important;
+    filter: drop-shadow(0 0 0.75rem black) !important;
+}
+
+.tricks:hover #block-tricks img {
+    filter: drop-shadow(0 0 2px rgba(255, 255, 0, 0.5)) !important;
+}
+
+#block-fit img{
+    width: 220px !important;
+    position: absolute; 
+    left: 223px !important;
+    top: 125px !important;
+    filter: drop-shadow(0 0 0.75rem black) !important;
+    z-index: 2;
+}
+
+.fit:hover #block-fit img {
+    filter: drop-shadow(0 0 2px rgba(255, 255, 0, 0.5)) !important;
+}
+
+#block-gear img{
+    width: 240px !important;
+    position: absolute; 
+    left: -96px !important;
+    top: -80px !important;
+    filter: drop-shadow(0 0 0.75rem black) !important;
+}
+
+.gear:hover #block-gear img {
+    filter: drop-shadow(0 0 2px rgba(255, 255, 0, 0.5)) !important;
+}
+
+#block-spot img{
+    width: 200px !important;
+    position: absolute; 
+    left: 300px !important;
+    top: -65px !important;
+    filter: drop-shadow(0 0 0.75rem black) !important;
+}
+
+.spot:hover #block-spot img {
+    filter: drop-shadow(0 0 2px rgba(255, 255, 0, 0.5)) !important;
 }
 
 
-#fit img {
-    width: 600px;
+#block-parts img{
+    width: 200px !important;
+    position: absolute; 
+    left: 95px !important;;
+    top: -75px !important;;
+    filter: drop-shadow(0 0 0.75rem black) !important;;
 }
 
+.parts:hover #block-parts img {
+    filter: drop-shadow(0 0 2px rgba(255, 255, 0, 0.5)) !important;
+}
+
+a {
+    color: black;
+}
+
+
+.fit img {
+    width: 650px;
+    filter: drop-shadow(0 0 2px black);
+}
+
+.fit:hover {
+    filter: drop-shadow(0 0 5px yellow);
+}
 
 #gear {
     position: absolute;
@@ -86,9 +236,12 @@ mark {
 
 #gear img {
     width: 350px;
+    filter: drop-shadow(0 0 2px black);
 }
 
-
+#gear:hover {
+    filter: drop-shadow(0 0 5px yellow);
+}
 
 #spot {
     position:absolute;
@@ -100,20 +253,23 @@ mark {
 
 #spot h3{
     position:absolute;
-    left: 300px;
+    left: 350px;
     top: -20px;
 }
 
 #spot img{
     width: 575px;
+    filter: drop-shadow(0 0 2px black);
 }
 
-
+#spot:hover {
+    filter: drop-shadow(0 0 5px yellow);
+}
 
 #tricks {
     position:absolute;
     left: 950px;
-    top: 325px;
+    top: 300px;
     padding: 5px;
     border-radius: 25px;
 }
@@ -126,13 +282,17 @@ mark {
 
 #tricks img {
     width: 400px;
+    filter: drop-shadow(0 0 2px black);
 }
 
+#tricks:hover {
+    filter: drop-shadow(0 0 5px yellow);
+}
 
 #parts {
     position: absolute;
     top: 470px;
-    left: 80px;
+    left: 60px;
     padding: 5px;
     border-radius: 25px;
 }
@@ -144,7 +304,18 @@ mark {
 }
 
 #parts img {
-    width: 550px;
+    width: 600px;
+    filter: drop-shadow(0 0 2px black);
 }
 
+#parts:hover {
+    filter: drop-shadow(0 0 5px yellow);
+}
+
+#name {
+    position: absolute; 
+    top: 655px;
+    left: 630px;
+    text-decoration: underline 2px solid black;
+}
 
