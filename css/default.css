@@ -1,3 +1,45 @@
 body {
     background-color: lightblue;
 }
+
+.lobster-two-regular {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lobster-two-bold {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lobster-two-regular-italic {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .lobster-two-bold-italic {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+h1, h2, h3 {
+    font-family: 'Lobster Two', sans-serif;
+}
+
+p, ul, ol, li {
+    font-family: "Kreon", serif;
+}
+
+a {
+    text-decoration: underline solid 1px black; 
+    color: black;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline solid 1px blue;
+}
