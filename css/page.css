@@ -82,7 +82,7 @@ mark {
 #heart img {
     width: 400px;
     position: absolute; 
-    top: 2px;
+    top: -50px;
     left: 900px;
     transform: rotate(-15deg);
     filter: saturate(80%);
