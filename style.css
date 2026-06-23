@@ -1,0 +1,87 @@
+:root {
+  --brand-blue-color: rgb(0, 102, 235);
+  --brand-lightblue-color: rgb(27, 198, 236);
+  --brand-white-color: #fff;
+  --brand-black-color: #222222;
+  --brand-green-color: #91E651;
+  --brand-pink-color: #D67AC4;
+}
+
+body {
+  margin: 2rem;
+  font-family: sans-serif;
+  background: black;
+  color: var(--brand-white-color);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Allerta" sans-serif; 
+}
+
+h1{
+    font-size: 3.5rem;
+    margin: 0;
+  padding: 1rem;
+
+}
+
+p,
+div {
+  font-family: "Georama", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+    color: var(--brand-blue-color);
+}
+
+ul{
+    list-style-type: none;
+  padding: 0; 
+  margin: 0; 
+    display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+li {
+    font-size: 1.5rem;
+
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 700px; /* optional limit */
+    margin: 0 auto;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+
+}
+
+.video-container video:hover {
+    transform: scale(1.05);
+}
+
