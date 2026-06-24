@@ -8,7 +8,7 @@
 }
 
 body {
-  margin: 2rem;
+  /* margin: 2rem; */
   font-family: sans-serif;
   background: black;
   color: var(--brand-white-color);
@@ -53,18 +53,27 @@ ul{
   padding-bottom: 1rem;
 }
 
+li {
+    font-size: 1.25rem;
+
+}
+
 .main-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-self: center;
     align-self: center;
+    padding: 1rem;
+    gap: 1rem;
+    height: 100vh;
 }
 
 .video-container {
     width: 100%;
-    max-width: 700px; /* optional limit */
+    max-width: 500px; 
     margin: 0 auto;
+    align-self: flex-end;
 }
 
 .video-container video {
@@ -73,7 +82,6 @@ ul{
     display: block;
     object-fit: cover;
     transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
-
 }
 
 .video-container video:hover {
